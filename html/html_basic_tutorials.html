@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+
+    <!--This is a comment in html-->
+    <!--Insert or link other files like css or js-->
+  </head>
+  <body>
+    <!--Division in the pages-->
+    <!--To create a unique label for an html element, use attribute id-->
+    <!--To create a grouping label for a set of html elements, use attribute class-->
+    <!--For any element, you can give an id as well as a class label-->
+
+    <div id="app-container" class="container">
+      This is some content inside a div tag
+    </div>
+
+    <h1>List of frequently used html tags</h1>
+
+    <!-- Headings in html-->
+    <h1>Hello World</h1>
+    <h2>test</h2>
+    <h3>test</h3>
+    <h4>test</h4>
+    <h5>test</h5>
+    <h6>test</h6>
+
+    <!--text insertion-->
+    <p>This is a paragraph of text</p>
+    <!--the paragraph tag is a block tag-->
+    <!--the span tag is a inline tag-->
+    <span>This is text in a span tag</span>
+    <span>This is a second span tag</span>
+
+    <!-- images -->
+    <img
+      src="link to an image not present- mickeymouse"
+      alt="This is an image of mickey mouse"
+    />
+
+    <!--link to other websites/ your own pages/ any location on a page -->
+    <!--The attribute below labeled "target blank" will open links in new tabs-->
+    <!--anchor tags are inline tags-->
+
+    <a href="https://oakland.edu" target="_blank">
+      Here is a link to oakland university</a
+    >
+    <!--the above file path is an absoulte file path-->
+    <a href="./html/projects.html"> Here is a link to my projects</a>
+    <!--the above file path is a relative file path-->
+    <a href="#app-container"> Here is a link to the app container div</a>
+
+    <!--horizontal rule-->
+    <hr />
+    <!--Forced new lines to be rendered in the browser-->
+    <br />
+    <br />
+    <br />
+
+    <!--create lists in our html document-->
+    <!--ordered list-->
+
+    <p>This is my todo list for today in order</p>
+    <ol>
+      <li>study</li>
+      <li>play</li>
+      <li>chores</li>
+    </ol>
+
+    <p>This is an example of an unordered list</p>
+    <!--emmet abbreviation for long lists-->
+    <!--ul>li*4   this means, unordered list with four list items-->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <p>This is an example of an unordered list</p>
+    <!--ul#myTodo-list>li.listItems*4-->
+    <!--emmet abbreviation that includes syntax for class (.), and id (#)-->
+    <ul id="myTodo-list">
+      <li class="listItems"></li>
+      <li class="listItems"></li>
+      <li class="listItems"></li>
+      <li class="listItems"></li>
+    </ul>
+
+    <hr />
+    <br />
+    <br />
+
+    <!--Form elements in html: the way to let users provide input-->
+    <form method="get" action="full_urlorlocalhost/login/">
+      <label for="user-email-field">Please enter your username:</label>
+      <input
+        type="email"
+        name="user-email-field"
+        value=""
+        id="user-email-field"
+        placeholder="abc@gmail.com"
+      />
+      <br />
+      <hr />
+
+      <!--There are other types of input please practice them on your own
+            type:text, date, datetime, datetimelocal, file, image, btn <not used often>-->
+
+      <label for="user-pwd-field">Enter your password</label>
+      <input
+        type="password"
+        name="user-pwd-field"
+        id="user-pwd-field"
+        value=""
+      />
+
+      <!--Checkboxes-->
+      <p>Choose your fav fruit</p>
+      <input type="checkbox" name="apple" id="apple" value="apple" />
+      <label for="apple">Apple</label>
+
+      <input type="checkbox" name="orange" id="orange" value="orange" />
+      <label for="orange">Orange</label>
+
+      <input type="checkbox" name="kiwi" id="kiwi" value="kiwi" checked="" />
+      <label for="kiwi">Kiwi</label>
+      <!--boolean attribute "checked" keeps specified check boxes checked regardless of user-->
+
+      <!--Radio Buttons-->
+      <p>Pick one sport from the following options</p>
+
+      <input type="radio" name="sports" id="football" value="football" />
+      <label for="football">Football</label>
+
+      <input type="radio" name="sports" id="volleyball" value="volleyball" />
+      <label for="volleyball">Volleyball</label>
+
+      <input type="radio" name="sports" id="hockey" value="hockey" />
+      <label for="hockey">Hockey</label>
+
+      <!--Submission btn-->
+      <button type="submit">SUBMIT</button>
+    </form>
+
+    <!--How to create tables in html-->
+    <!--html tag for bold font is <b></b>, however, don't use it-->
+    <!--rowspan and colspan= self study these tags, to be used inside table environment-->
+    <table border="2">
+      <thead>
+        <tr>
+          <th>S. No</th>
+          <th>Name</th>
+          <!--th tag stands for table heading and is symantically different
+            from a tr or td tag, will automatically bold table headers-->
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>John</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>456</td>
+          <td>Jane</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Total Salary</td>
+          <td>500</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--Semantic html tags: very important for a good html developer.-->
+    <!--See notes in recordings for sematic tag usage to structure the webpage-->
+
+    <!--multimedia embedding for html-->
+
+    <!--audio files-->
+    <audio src="./assets/audio_sample.mp3" controls>
+      This is a sample audio file
+    </audio>
+    <!--boolean attribute option "autoplay" after controls attribute make mp3 autoplay-->
+    <!--only really used for myspace and advertising-->
+
+    <!--video files-->
+    <video src="./assets/video_sample.mpeg" width="" height="" controls>
+      Your browser does not support the embedded video file
+    </video>
+    <br />
+
+    <!--for video sizing, there are relative and absolute units-->
+    <!--an example of absolute sizing is pixels(px), cm, inch; 
+        and relative is percentage(%), viewport height, viewport width, 
+        and em,rem, which are DOM structure based-->
+
+    <!--embed other files like pdf files or websites on you website-->
+    <iframe
+      src="./assets/sample_pdf_file.pdf"
+      frameborder="0"
+      width="100%"
+      height="400px"
+      >Your browser does not support iframe embedding
+    </iframe>
+
+    <br />
+
+    <iframe
+      src="https://www.oakland.edu"
+      frameborder="0"
+      width="100%"
+      height="400px"
+      >Your browser does not support iframe embedding
+    </iframe>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
