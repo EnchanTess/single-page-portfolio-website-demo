@@ -3,11 +3,226 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--three ways to link css
+        0. browser default styling
+        1. external file
+        2. internal
+        3. inline
+    -->
+
     <title>Portfolio Website Demo</title>
     <!--Making changes to practice pushing to github-->
+
+    <!--syntax for external css file linkage-->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--internal css using style tags inside head of html doc-->
+    <!--<style>
+      /* here anything you write is treated as css code and not html */
+      h1 {
+        color: #331dd9;
+        font-size: 32px;
+      }
+    </style>-->
   </head>
 
   <body>
-    <h1>Hello world from portfolio website</h1>
+    <!--inline css incorporation using the style attribute- DO NOT DO IT-->
+    <!--<h1 style="color: rgb(37, 172, 127)">Hello world from portolio website</h1>
+
+    <h1>Hello world from portfolio website</h1>-->
+
+    <!--<div class="header">
+      <h3 class="logo">
+        LOGO <span><i class='bx bxl-typescript'></i></span>
+      </h3>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hire-btn">Hire Me</button>
+    </div>-->
+
+    <!--Start header section here-->
+    <div class="navbar">
+      <h2>LOGO/left</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <button class="hire-btn">Hire Me</button>
+    </div>
+    <!--End of header section-->
+
+    <!--Start hero section here-->
+    <div class="main">
+      <h4>Hi, my name is <span>LOGO</span></h4>
+      <p class="title">Freelance Full Stack Web Developer</p>
+      <p class="subtitle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </p>
+      <img src="" alt="logo or image" />
+    </div>
+    <!--End of hero section-->
+
+    <!--Start the first subsection (services assurance)-->
+    <div class="services-assurance">
+      <!--first assurance item-->
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-check-shield"></i>
+        </div>
+        <div class="info">
+          <h3>+10</h3>
+          <p>Years of Experience</p>
+        </div>
+        <!--icon to the right-->
+        <i class="bx bxs-chevron-right"></i>
+      </div>
+
+      <!--second assurance item-->
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-check-circle"></i>
+        </div>
+        <div class="info">
+          <h3>+200</h3>
+          <p>Completed Projects</p>
+        </div>
+        <!--icon to the right-->
+        <i class="bx bxs-chevron-right"></i>
+      </div>
+
+      <!--third assurance item-->
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-happy-heart-eyes"></i>
+        </div>
+        <div class="info">
+          <h3>+70</h3>
+          <p>Satisfied Customers</p>
+        </div>
+        <!--icon to the right-->
+        <i class="bx bxs-chevron-right"></i>
+      </div>
+    </div>
+    <!--End the first subsection (services assurance)-->
+
+    <!--create a section separator-->
+    <h5 class="section-separator-title">A Little Bit About Me</h5>
+
+    <!--Begin subsection for about me/ who am i-->
+
+    <div class="about-me">
+      <img src="" alt="Portfolio image of a person" />
+      <div class="info">
+        <h3>Hello Friends...</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Voluptatum doloribus dignissimos doloremque necessitatibus 
+          reiciendis nesciunt quibusdam laborum officia corrupti, 
+          repellat harum laboriosam reprehenderit autem delectus a 
+          dolorem tempora, rem totam!
+        </p>
+        <button class="hire-btn">Hire Me</button>
+
+      </div>
+    </div>
+
+    <!--End subsection for about me/ who am i-->
+
+    <!--Begin skill set subsection here-->
+
+     <!--create a section separator-->
+     <h5 class="section-separator-title">An Overview of my Skills...</h5>
+
+    <div class="Skills">
+      <div class="left">
+        <div class="info">
+          <h3>My Programming Skills</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Voluptatum doloribus dignissimos doloremque necessitatibus 
+           reiciendis nesciunt quibusdam laborum officia corrupti, 
+            repellat harum laboriosam reprehenderit autem delectus a 
+            dolorem tempora, rem totam!
+          </p>
+        </div>
+        <button class="hire-btn">Hire Me</button>
+      </div>
+
+      <div class="right">
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-java' ></i>
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-javascript' ></i>
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-python' ></i>
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-nodejs' ></i>        
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-mongodb' ></i>        
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-php' ></i>        
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-java' ></i>
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-javascript' ></i>
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-python' ></i>
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-nodejs' ></i>        
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-mongodb' ></i>        
+        </div>
+        <div class="item">
+          <!--place your skill set icons-->
+          <i class='bx bxl-php' ></i>        
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+
+
+    <!--End skill set subsection here-->
+
   </body>
 </html>
